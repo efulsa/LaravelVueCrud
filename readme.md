@@ -1,6 +1,6 @@
 # Larticles Laravel/Vue App
 
-> Laravel 5.5 API that uses the API resources with a Vue.js frontend
+> Laravel API that uses the API resources with a Vue.js frontend
 
 ## Quick Start
 
@@ -8,13 +8,15 @@
 # Install Dependencies
 composer install
 
+# Edit Your .env file
+
+# Clear Config & Cache
+php artisan config:cache
+php artisan config:clear
+php artisan cache:clear
+
 # Run Migrations
 php artisan migrate
-
-# Import Articles
-php artisan db:seed
-
-# Add virtual host if using Apache
 
 # If you get an error about an encryption key
 php artisan key:generate
@@ -24,7 +26,12 @@ npm install
 
 # Watch Files
 npm run watch
+
+# Start Serve if you locate out htdocs
+php artisan serv
+
 ```
+
 
 ## Endpoints
 
